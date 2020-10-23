@@ -1,0 +1,34 @@
+@Metadata.layer: #CORE
+@UI.headerInfo: {
+    typeName: 'Cliente',
+    typeNamePlural: 'Clientes',
+    typeImageUrl: '',
+    imageUrl: 'URL',
+    title: {
+        type: #STANDARD,
+        label: '',
+        iconUrl: '',
+        criticalityRepresentation: #WITHOUT_ICON
+    },
+    description: {
+        type: #STANDARD,
+        label: '',
+        iconUrl: '',
+        criticalityRepresentation: #WITHOUT_ICON
+    }
+}
+annotate view zb_clnts_lib_9492 with
+{
+  @UI.lineItem: [{ position: 10 , importance: #HIGH }]
+  Tipo_Acceso;
+  
+  @UI.lineItem: [{ position: 20 , importance: #HIGH , label:'Nombre'}]
+  Nombre;
+  
+  @UI.lineItem: [{ position: 30 , importance: #MEDIUM  , label:'Apellidos' }]
+  Apellidos;
+  
+  @UI.lineItem: [{ position: 40 , importance: #LOW }]
+  Email;
+
+}
